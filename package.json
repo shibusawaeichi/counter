@@ -1,0 +1,14 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "iPhone向けタップカウンターPWA",
+  "scripts": {
+    "icons": "node scripts/make-icons.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "start": "npm run build && npx --yes serve dist"
+  },
+  "engines": { "node": ">=20" }
+}
